@@ -1,0 +1,25 @@
+URL = "xyz.com"
+ response = requests.get(URL)
+
+    # Parse the HTML of the webpage
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    # Find all the elements with the class "card"
+    cards = soup.find_all(class_="card")
+    print(cards)
+
+    # Iterate through the cards and extract the data for each event
+    for card in cards:
+        print("events here :\n")
+        title = card.find(class_="card-title").text
+        date = card.find(class_="card-date").text
+        location = card.find(class_="card-location").text
+        description = card.find(class_="card-description").text
+
+        # Print the data for the event
+        
+        print(f"Title: {title}")
+        print(f"Date: {date}")
+        print(f"Location: {location}")
+        print(f"Description: {description}")
+   
