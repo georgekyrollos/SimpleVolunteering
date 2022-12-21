@@ -134,10 +134,7 @@ def site2(events):
         print("Error parsing site 2\n"+str(Exception.__cause__))
     finally:
         return events
-
-
-
-
+    
 def parseData():
     events = []  
     
@@ -169,4 +166,3 @@ def writeToFile(events): # Create Calendar with parsed events
         f.close()
     
 parseData()
-#site2(["hi"])
