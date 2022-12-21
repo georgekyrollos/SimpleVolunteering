@@ -8,4 +8,7 @@ sign up for opportunities that match their schedule. At SimpleVolunteering, we b
 to making it easier for people to make a difference through volunteering.
 
 Python Script updates 'events.js' with freshly parsed data. Data is then put into evo calendar. 
+
 https://github.com/edlynvillegas/evo-calendar
+
+Note: 'SVS.py' script must be run to populate calendar **
