@@ -118,7 +118,7 @@ def site2(events):
             year = (str(date)[len(month)+len(day)+2:len(month)+len(day)+7].strip()).replace(",","").replace("-","")
             try:
                 year = int(year)
-                year+=1 # FOR PRESENTATION PURPOSES SHOWING ONE YEAR UP TO BOOST VOLUME
+                #year+=1   # FOR PRESENTATION PURPOSES SHOWING ONE YEAR UP TO BOOST VOLUME
                         # THIS SITE UPDATES INFREQUENTLY BUT IN BULK 
                         # WHEN SITE UPDATES DURING SPRING TIME, EVENTS WILL BE FILLED IN
                         # ARTIFICIAL BUMP 
@@ -152,7 +152,7 @@ def writeToFile(events): # Create Calendar with parsed events
         id = 0
         for event in events:
             try:
-                if ( not event.passed()):      
+                if ( not event.passed()):   # dont show old events
                     
                     f.write("{id: '"+str(id)+"', name: '"+event.name+"', date:'"+event.date+"', description: '"+event.location+"', type:'"+event.url+"'},\n")
                     id+=1
