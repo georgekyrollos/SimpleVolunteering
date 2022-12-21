@@ -121,7 +121,7 @@ def site2(events):
                 #year+=1   # FOR PRESENTATION PURPOSES SHOWING ONE YEAR UP TO BOOST VOLUME
                         # THIS SITE UPDATES INFREQUENTLY BUT IN BULK 
                         # WHEN SITE UPDATES DURING SPRING TIME, EVENTS WILL BE FILLED IN
-                        # ARTIFICIAL BUMP 
+                        # ARTIFICIAL BUMP FOR DEMO
             except Exception:
                 print("i")
                 continue
