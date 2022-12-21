@@ -11,4 +11,4 @@ Python Script updates 'events.js' with freshly parsed data. Data is then put int
 
 https://github.com/edlynvillegas/evo-calendar
 
-Note: 'SVS.py' script must be run to populate calendar **
+Note: 'SVS.py' script must be run to populate calendar with fresh data**
